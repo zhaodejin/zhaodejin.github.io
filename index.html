@@ -1,35 +1,81 @@
-<div class="main">
+<!DOCTYPE html>
+<html lang="en">
 
-    <div class="login-form">
-        <h2>SignIn Form</h2>
-        <div class="agileits-top">
-            <form action="#" method="post">
-                <div class="styled-input">
-                    <input type="text" name="User Name" required="" />
-                    <label>User Name</label>
-                    <span></span>
-                </div>
-                <div class="styled-input">
-                    <input type="password" name="Password" required="">
-                    <label>Password</label>
-                    <span></span>
-                </div>
-                <div class="wthree-text">
-                    <ul>
-                        <li>
-                            <input type="checkbox" id="brand" value="">
-                            <label for="brand"><span></span> Remember me ?</label>
-                        </li>
-                        <li> <a href="#">Forgot password?</a> </li>
-                    </ul>
-                    <div class="clear"> </div>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>还钱</title>
+    <link rel="stylesheet" href="save.css" />
+    <script src="save.js"></script>
+
+
+</head>
+
+<body>
+    <div class="div">
+        <div class="sign-div">
+            <h1 class="center">还钱</h1>
+            <form class=" center " action="# " method="POST ">
+                <ul class="edit ">
+                    <li>
+                        <div>还</div>
+                        <input class=" input-text1 " type="text " name=" save " id="save" value=""></input>
+                        <div>倒计时</div>
+                    </li>
+                    <li class="edit ">
+                        <label>
+                            <div>开始时间戳</div>
+                            <input class="input-text " type="text " name="startSeconds"  id="startSeconds" value="" required/>
+                        </label>
+                    </li>
+                    <li class="edit ">
+                        <label>
+                            <div>开始时间</div>
+                            <input class="input-text " type="text "  name="startTime" id="startTime" value="" required/>
+                        </label>
+                    </li>
+                    <li class="edit ">
+                        <label>
+                            <div>当前时间戳</div>
+                            <input class="input-text " type="text " name="currentSeconds" id="currentSeconds" value="" required/>
+                        </label>
+                    </li>
+                    <li class="edit ">
+                        <label>
+                            <div>当前时间</div>
+                            <input class="input-text " type="text " name="currentTime " name="currentTime " id="currentTime" value="" required/>
+                        </label>
+                    </li>
+                    <li class="edit ">
+                        <label>
+                            <div>累计收入</div>
+                            <input class="input-text " type="text " name="Incomes " id="Incomes" value="" required/>
+                        </label>
+                    </li>
+                    <li class="edit ">
+                        <label>
+                            <div>剩余</div>
+                            <input class="input-text " type="text " name="retSave " id="retSave"  value="" required>
+                        </label>
+                    </li>
+                    <li class="edit ">
+                        <label>
+                            <div>倒计时</div>
+                            <input class="input-text " type="text " name="finalTime " id="finalTime"  value="" required>
+                        </label>
+                    </li>
+                    <li class="edit ">
+                        <label>
+                            <div id="myProcess">
+                                <div id="myBar">%0</div>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
             </form>
-        </div>
-        <div class="agileits-bottom">
-            <form action="#" method="post">
-                <input type="submit" value="Sign In">
-            </form>
+            <input class="input-btn" type="button" value="刷新" id="update" onclick='setInterval(update,1000)'>
         </div>
     </div>
-</div>
+</body>
+
+</html>

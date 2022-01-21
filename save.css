@@ -1,0 +1,538 @@
+.animated {
+    -webkit-animation-duration: 1.4s;
+    animation-duration: 1.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+@-webkit-keyframes bounceIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+        transform: scale(.3)
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05)
+    }
+    70% {
+        -webkit-transform: scale(.9);
+        transform: scale(.9)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+        -ms-transform: scale(.3);
+        transform: scale(.3)
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05)
+    }
+    70% {
+        -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+        transform: scale(.9)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+.bounceIn {
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn
+}
+
+@-webkit-keyframes bounceInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-2000px);
+        transform: translateY(-2000px)
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px)
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px)
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+@keyframes bounceInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-2000px);
+        -ms-transform: translateY(-2000px);
+        transform: translateY(-2000px)
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+        transform: translateY(30px)
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px)
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+.bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown
+}
+
+@-webkit-keyframes bounceOutUp {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    20% {
+        opacity: 1;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px)
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(-2000px);
+        transform: translateY(-2000px)
+    }
+}
+
+@keyframes bounceOutUp {
+    0% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0)
+    }
+    20% {
+        opacity: 1;
+        -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        transform: translateY(20px)
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(-2000px);
+        -ms-transform: translateY(-2000px);
+        transform: translateY(-2000px)
+    }
+}
+
+.bounceOutUp {
+    -webkit-animation-name: bounceOutUp;
+    animation-name: bounceOutUp
+}
+
+@-webkit-keyframes rollIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100%) rotate(-120deg);
+        transform: translateX(-100%) rotate(-120deg)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0px) rotate(0deg);
+        transform: translateX(0px) rotate(0deg)
+    }
+}
+
+@keyframes rollIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100%) rotate(-120deg);
+        -ms-transform: translateX(-100%) rotate(-120deg);
+        transform: translateX(-100%) rotate(-120deg)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0px) rotate(0deg);
+        -ms-transform: translateX(0px) rotate(0deg);
+        transform: translateX(0px) rotate(0deg)
+    }
+}
+
+.rollIn {
+    -webkit-animation-name: rollIn;
+    animation-name: rollIn
+}
+
+@-webkit-keyframes flipInX {
+    0% {
+        -webkit-transform: perspective(400px) rotateX(90deg);
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0
+    }
+    40% {
+        -webkit-transform: perspective(400px) rotateX(-10deg);
+        transform: perspective(400px) rotateX(-10deg)
+    }
+    70% {
+        -webkit-transform: perspective(400px) rotateX(10deg);
+        transform: perspective(400px) rotateX(10deg)
+    }
+    100% {
+        -webkit-transform: perspective(400px) rotateX(0deg);
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1
+    }
+}
+
+@keyframes flipInX {
+    0% {
+        -webkit-transform: perspective(400px) rotateX(90deg);
+        -ms-transform: perspective(400px) rotateX(90deg);
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0
+    }
+    40% {
+        -webkit-transform: perspective(400px) rotateX(-10deg);
+        -ms-transform: perspective(400px) rotateX(-10deg);
+        transform: perspective(400px) rotateX(-10deg)
+    }
+    70% {
+        -webkit-transform: perspective(400px) rotateX(10deg);
+        -ms-transform: perspective(400px) rotateX(10deg);
+        transform: perspective(400px) rotateX(10deg)
+    }
+    100% {
+        -webkit-transform: perspective(400px) rotateX(0deg);
+        -ms-transform: perspective(400px) rotateX(0deg);
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1
+    }
+}
+
+.flipInX {
+    -webkit-backface-visibility: visible !important;
+    -ms-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInX;
+    animation-name: flipInX
+}
+
+.demo {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center
+}
+
+.demo a {
+    margin: 0 5px 20px;
+    background-color: #eee
+}
+
+#dialogBg {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .8;
+    filter: alpha(opacity=60);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 48;
+    display: none
+}
+
+#dialog {
+    width: 586px;
+    height: 386px;
+    margin: 0 auto;
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -177px 0 0 -289px;
+    z-index: 49;
+    border: 1px solid #ccc;
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 3px 2px 4px rgba(0, 0, 0, .2)
+}
+
+.dialogTop {
+    margin: 0 auto;
+    border-bottom: 1px dotted #ccc;
+    letter-spacing: 1px;
+    padding: 30px 31px 12px 31px;
+    overflow: hidden;
+}
+
+.dialogIco {
+    float: left;
+    font-size: 22px;
+    color: #403f42;
+    font-weight: 600;
+}
+
+.claseDialogBtn {
+    float: right;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.editInfos {
+    margin-top: 36px;
+}
+
+.editInfos li {
+    padding: 0 54px;
+    margin-bottom: 22px;
+    height: 40px;
+}
+
+.editInfos li label {
+    overflow: hidden;
+}
+
+.editInfos li div {
+    font-size: 19px;
+    width: 102px;
+    float: left;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.editInfos li div input {
+    float: left;
+}
+
+.ipt {
+    width: 360px;
+    height: 40px;
+    border: 1px solid #ccc !important;
+    border-radius: 2px;
+    -webkit-border-radius: 3px;
+    padding-left: 12px;
+}
+
+.ipt:focus {
+    outline: 0;
+    border-color: #4c3982;
+    /*box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset, 0 0 8px rgba(102, 175, 233, .6);*/
+    /*-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset, 0 0 8px rgba(102, 175, 233, .6)*/
+}
+
+.submitBtn {
+    width: 230px;
+    height: 49px;
+    line-height: 49px;
+    cursor: pointer;
+    display: block;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    text-align: center;
+    background-color: #4d3c80;
+    color: #fff;
+    margin: 30px auto 0;
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 8px;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(1.jpg);
+}
+
+.div {
+    width: 400px;
+    height: 700px;
+    /* 实现整个框居中效果 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.center {
+    text-align: center;
+    align-items: center;
+}
+
+.edit {
+    margin-top: 24px;
+}
+
+.edit li {
+    padding: 0;
+    margin-bottom: 10px;
+    height: 40px;
+    list-style-type: none;
+}
+
+.edit li label {
+    height: 40;
+    overflow: hidden;
+}
+
+.edit li div {
+    font-size: 19px;
+    width: 100px;
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.edit li input {
+    float: left;
+}
+
+.head-div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    background: url(2.jpg) no-repeat;
+    background-size: 100px 100px;
+}
+
+#sign {
+    width: 400px;
+    height: 700px;
+    text-align: center;
+    outline: none;
+    border: 1px solid rgb(94, 92, 233);
+    border-radius: 8px;
+    background-color: rgba(172, 235, 243, .2);
+    box-sizing: border-box;
+}
+
+.sign-div {
+    width: 400px;
+    height: 700px;
+    text-align: center;
+    outline: none;
+    border: 1px solid rgb(94, 92, 233);
+    border-radius: 8px;
+    background-color: rgba(172, 235, 243, .2);
+    box-sizing: border-box;
+}
+
+.sign-div h1 {
+    margin-bottom: auto;
+    color: rgb(39, 23, 23);
+}
+
+input {
+    width: 200px;
+    height: 35px;
+    border: none;
+    /* 元素周围的轮廓无效 */
+    outline: none;
+    /* 为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制 */
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    margin-left: 50;
+    margin-right: 50;
+}
+
+.input-text {
+    margin: 5px auto;
+    border-radius: 16px;
+    display: hidden;
+}
+
+.input-text1 {
+    width: 100px;
+    margin: 5px auto;
+    border-radius: 16px;
+}
+
+.input-text1:hover {
+    border: 0.5px solid rgb(76, 76, 233);
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+.input-text:hover {
+    border: 0.5px solid rgb(76, 76, 233);
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+.input-btn {
+    width: 300px;
+    height: 44px;
+    padding: auto;
+    margin: 5px auto;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: rgba(67, 68, 122, 0.8);
+}
+
+.input-btn:hover {
+    color: #fff;
+    font-size: 16;
+    border-radius: 4px;
+    transition: 0.5s;
+    background-color: rgba(9, 10, 12, 0.8);
+}
+
+.sign-div a {
+    text-decoration: none;
+    color: rgb(92, 61, 112);
+    font-size: 14px;
+    padding: 10px;
+    transition: 0.8s;
+    display: block;
+}
+
+a:hover {
+    color: #FFF;
+    background: rgba(0, 0, 0, .3);
+    border-radius: 8px;
+}
+
+#myProcess {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 16px;
+}
+
+#myBar {
+    width: 10%;
+    padding-top: 15px;
+    height: 100%;
+    height: 10px;
+    background-color: #060706b7;
+    text-align: center;
+    line-height: 0.1px;
+    color: white;
+    border-radius: 16px;
+    font-size: 8px;
+}
