@@ -24,7 +24,7 @@ function finalFormat(seconds) {
 
 function update() {
     var startSeconds = 1626660000;
-    var save = 32000 + 4828.14 + 2000 + 1500 + 2000 + 23500;
+    var save = 32000 + 4828.14 + 2000 + 1500 + 2000 + 13900;
     var id = setInterval(flush, 1000)
 
     function flush() {
